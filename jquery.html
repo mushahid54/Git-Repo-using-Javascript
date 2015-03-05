@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>Github repo</title>
+	<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<script type="text/javascript" src="app.js"></script>
+	<link rel="stylesheet" type="text/css" href="app.css">
+	</head>
+	<body>
+		<div class="container-fluid">
+			<span><h3><strong>All Github Name Related to Query</strong></h3></span>
+		</div>
+		<ul id="my-list" style="width: 200px">
+			<li>List item 1</li>
+			<li>List item 2</li>
+			<li>List item 3</li>
+			<li>List item 4</li>
+			<li>List item 5</li>
+			<li>List item 6</li>
+		</ul>
+		<p class="lead">So far...</p>
+
+		<div>
+		   <label><h3><strong>Github repos named using jquery :</strong></h3></label><br>
+		   <label>Name <span class="required-field"> * </span></label>
+		   <input type="text" placeholder="Enter a repository name" class="repo-name" style="width:300px; height:28px">
+		  <abbr class="initialism" title="Please type the repo_name to get additional info !!!">
+		     <button class="btn btn-suucess" id="load-button" style="height:35px;">Load results</button>
+		  </abbr>
+		</div>
+
+		<div class="results-container">
+			<img class="spinner" src="http://www.mymeritdental.com/wp-content/themes/merit-dental/images/ajax-loader.gif">
+			<h3>Detail:</h3>
+			<div class="container" id="detail">
+			   <ol><ul id="github-results"></ul></ol>
+		    </div>   
+		</div>
+	</body>
+</html>

@@ -1,0 +1,22 @@
+h3{
+	color: #800000
+}
+body{
+	background:#8A9C9A
+}
+
+.error {
+	color: red;
+}
+#load-button{
+
+	color: #8A9C9A;
+}
+.repo-name{
+	outline-color: #8345FF
+}
+
+#detail{
+	border-color: #808080;
+	width: 400px;
+}
