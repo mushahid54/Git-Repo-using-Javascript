@@ -21,12 +21,16 @@ $(function() {
 		for ( i=0; i< response.repositories.length; i++ ) {
 			appendListItem( response.repositories[ i ] );
 		}
-
+		if(response.repositories.length === 0)
+			$('#Span1').text('Sorry No Result Found !!!');
+		else{
+			$('#Span1').text('Get Details!!!');
+		}
 		displayList();
 	}
 
 	function appendListItem ( repo ) {
-		$( '#github-results' ).append( '<div class="table-responsive"<li> <table class="table table-hover"> <tr> <td class="info" </td> ' + repo.name + ' '+ ' <strong> By </strong> ' + repo.owner + ' <strong> UserName : </strong>' + repo.username+' </tr></table></li></div>'  );
+		$( '#github-results' ).append( '<li> <div class="table-responsive"> <table class="table table-hover"> <tr> <td class="info" </td> ' + repo.name + ' '+ ' <strong> By </strong> ' + repo.owner + ' <strong> UserName : </strong>' + repo.username+' </tr></table></div></li>'  );
 	}
 
 	function displayList () {

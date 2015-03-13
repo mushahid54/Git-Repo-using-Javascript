@@ -1,5 +1,5 @@
 h3{
-	color: #800000
+	color: #ABDF45
 }
 body{
 	background:#8A9C9A
@@ -13,10 +13,19 @@ body{
 	color: #8A9C9A;
 }
 .repo-name{
-	outline-color: #8345FF
+	outline-color: #B00000 
 }
 
 #detail{
 	border-color: #808080;
 	width: 400px;
+}
+.newtext{
+	font-size: 18pt;
+	color: #ABDF45;
+	font-family: arial
+}
+.table-responsive{
+    width: 450px;
+	position: relative;
 }
